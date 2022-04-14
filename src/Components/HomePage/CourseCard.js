@@ -2,7 +2,7 @@ import { faBookOpenReader, faClockFour, faStar } from '@fortawesome/free-solid-s
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-const CourseCard = ({course}) => {
+const CourseCard = ({course,itemCardbtnClickHandle}) => {
 const {id,price,picture,category,name,company,hour,minutes}= course
     return (
         <div className='max-w-sm rounded-lg mx-auto border border-gray-200 shadow-md'>
@@ -29,7 +29,7 @@ const {id,price,picture,category,name,company,hour,minutes}= course
                 </p>
                 <div className='my-3 flex justify-between'>
                     <h2 className='text-3xl'>{price}</h2>
-                    <button className='px-5 py-1 border-2 border-sky-400 rounded-3xl text-sky-400'>BUY NOW</button>
+                    <button onClick={()=>itemCardbtnClickHandle(id)} className='px-5 py-1 border-2 border-sky-400 rounded-3xl text-md  text-sky-400'>Details</button>
                 </div>
             </div>
 

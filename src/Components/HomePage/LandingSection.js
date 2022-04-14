@@ -8,13 +8,13 @@ const LandingSection = () => {
   return (
     <div className="bg-color">
       <div className="grid grid-cols-1 container font-poppins mx-auto lg:grid-cols-2">
-        <div className="flex  items-center mt-11 ml-6 order-2 lg:order-1 lg:ml-16">
+        <div className="flex  items-center justify-center mt-11 ml-6 order-2 lg:order-1 md:ml-16">
           <div>
-            <h1 className="font-poppins leading-snug mb-5 text-3xl font-bold text-neutral-800 lg:text-5xl">
+            <h1 className="font-poppins leading-snug mb-5 text-3xl font-bold text-neutral-800  md:text-5xl">
               Learning together,
               <span className="block"> we achieve great things.</span>
             </h1>
-            <p className="text-xl lg:ext-3xl">Learn more skills, be more competitive</p>
+            <p className="text-xl md:text-3xl">Learn more skills, be more competitive</p>
             <div className="my-11 border-2 border-gray-700  w-11/12 flex items-center rounded-3xl lg:my-14 lg:w-4/6">
               <p className="text-gray-700 px-3">
                 <FontAwesomeIcon icon={faSearch} /></p>
@@ -34,9 +34,9 @@ const LandingSection = () => {
             </div>
           </div>
         </div>
-        <div className="relative ml-auto order-1 lg:order-2 flex items-center justify-center">
-        <div className="w-9/12 lg:w-full ">
-        <img className=" max-h-[650px]  h-auto" src={loadingScreenImg} alt="" />
+        <div className="relative ml-auto w-full  order-1 lg:order-2 flex items-center justify-center">
+        <div className="w-9/12  flex justify-center lg:w-full ">
+        <img className="  max-h-[650px]  h-auto" src={loadingScreenImg} alt="" />
         </div>
         
           <p className="absolute top-24 right-7 bg-btnColor py-2 px-3 border-2 border-white rounded-xl text-white  text-3xl lg:right-20 lg:top-44"><FontAwesomeIcon icon={faChartSimple} /></p>

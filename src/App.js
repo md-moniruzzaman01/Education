@@ -10,8 +10,16 @@ import NotFound from './Components/NotFoundPage/NotFound';
 import Coursepage from './Components/course/Coursepage';
 import Library from './Components/Library/Library';
 import RequireAuth from './Components/othersFile/RequireAuth';
+import CourseDetails from './Components/course/CourseDetails';
+import React, { createContext } from 'react';
+import useCourse from './hooks/useCourse';
+
 
 function App() {
+
+
+
+  
   return (
     <div className="App">
       <Header></Header>
@@ -19,8 +27,15 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path='/login' element={<Login></Login>}/>
       <Route path='/register' element={<Register/>}/>
+
+     
       <Route path='/profile' element={<Profilepage/>}/>
+      
       <Route path='/course' element={<Coursepage/>}/>
+     
+      
+      <Route path='/course/:id' element={  <CourseDetails></CourseDetails>}/>
+        
       <Route path='/library' element={
         <RequireAuth>
           <Library></Library>

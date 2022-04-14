@@ -43,12 +43,12 @@ const Header = () => {
 
 
         
-         <ul className={` sm:static z-10  md:flex sm:py-8 md:py-0 items-center bg-white py-4 justify-end md:w-10/12 w-full duration-500 ease-in-out  lg:bg-none  absolute ${ open ? 'top-11 left-0 ' : 'top-[-1200px]'} `}>
+         <ul className={` sm:static z-10   sm:py-8 md:py-0 items-center bg-white py-4 justify-end md:w-11/12 w-full duration-500 ease-in-out md:flex  lg:bg-none  absolute ${ open ? 'top-11 left-0 ' : 'top-[-1200px]'} `}>
         
-           <div className='lg:flex justify-between w-10/12 '>
+           <div className='md:flex justify-between w-10/12 '>
 
 
-           <div className='lg:flex justify-evenly  items-center w-6/12'>
+           <div className='md:flex justify-evenly  items-center  lg:w-6/12 lg:ml-14'>
             <li><CustomLink className=' mr-3 pl-2' to="/">Home</CustomLink></li>
             <li><CustomLink className=' mr-3 pl-2' to="/course">Course</CustomLink></li>
             <li><CustomLink className=' mr-3 pl-2' to="/library">Library</CustomLink></li>
