@@ -1,7 +1,7 @@
 import { getAuth } from 'firebase/auth';
 import React from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import app from '../../firebase.init';
 
 const Login = () => {
@@ -13,10 +13,11 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
-
+      let location = useLocation();
+      let from = location.state?.from?.pathname || "/";
 
       if(user){
-        navigte('/')
+        navigte(from, { replace: true })
      }
 
 

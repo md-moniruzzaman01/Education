@@ -7,6 +7,9 @@ import Home from './Components/HomePage/Home';
 import Login from './Components/LoginOrRegister/Login';
 import Register from './Components/LoginOrRegister/Register';
 import NotFound from './Components/NotFoundPage/NotFound';
+import Coursepage from './Components/course/Coursepage';
+import Library from './Components/Library/Library';
+import RequireAuth from './Components/othersFile/RequireAuth';
 
 function App() {
   return (
@@ -17,6 +20,12 @@ function App() {
       <Route path='/login' element={<Login></Login>}/>
       <Route path='/register' element={<Register/>}/>
       <Route path='/profile' element={<Profilepage/>}/>
+      <Route path='/course' element={<Coursepage/>}/>
+      <Route path='/library' element={
+        <RequireAuth>
+          <Library></Library>
+        </RequireAuth>
+      }/>
       <Route path='*' element={<NotFound/>}/>
       
     </Routes>

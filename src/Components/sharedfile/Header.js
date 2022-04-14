@@ -50,12 +50,13 @@ const Header = () => {
 
            <div className='lg:flex justify-evenly  items-center w-6/12'>
             <li><CustomLink className=' mr-3 pl-2' to="/">Home</CustomLink></li>
-            <li><CustomLink className=' mr-3 pl-2' to="/downloads">Downloads</CustomLink></li>
+            <li><CustomLink className=' mr-3 pl-2' to="/course">Course</CustomLink></li>
+            <li><CustomLink className=' mr-3 pl-2' to="/library">Library</CustomLink></li>
             <li><CustomLink className=' mr-3 pl-2' to="/contact">Contact us</CustomLink></li>
             <li><CustomLink className=' mr-3 pl-2' to="/about">About</CustomLink></li>
             </div>
             {
-                user? <div onClick={navigateTo} className='bg-btnColor px-3  text-sky-300 font-medium  py-2 rounded-full  text-2xl'><h1 >{prifileIcon}</h1></div> : 
+                user? <div onClick={navigateTo} className='bg-btnColor cursor-pointer px-3  text-sky-300 font-medium  py-2 rounded-full  text-2xl'><h1 >{prifileIcon}</h1></div> : 
                 <div className='flex items-center '>
 
                 <li> <Link to="/login" className='mr-4 pl-2   text-md text-medium border-r-2  border-gray-500 pr-3'>login</Link> </li>
