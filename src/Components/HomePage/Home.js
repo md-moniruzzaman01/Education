@@ -3,6 +3,7 @@ import CetagorySection from './CetagorySection';
 import CourseSection from './CourseSection';
 import LandingSection from './LandingSection';
 import { useEffect, useState } from 'react';
+import Testimonials from './Testimonials';
 
 const Home = () => {
  
@@ -11,6 +12,7 @@ const Home = () => {
             <LandingSection></LandingSection>
             <CetagorySection  ></CetagorySection>
             <CourseSection></CourseSection>
+            <Testimonials></Testimonials>
         </div>
     );
 };
