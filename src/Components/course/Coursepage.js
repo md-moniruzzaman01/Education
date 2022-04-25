@@ -1,15 +1,29 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import useCourse from '../../hooks/useCourse';
+import CourseCard from '../HomePage/CourseCard';
 
 const Coursepage = () => {
+    const [popularCourse, setPopularCourse] =useCourse();
+    const navigate = useNavigate()
+
+    const itemCardbtnClickHandle=(id)=>{
+            console.log('hello',id);
+            navigate(`/course/${id}`)
+    }
+
     return (
         <div className='flex justify-center items-center'>
-              <div class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
-                <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="" alt="" />
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Noteworthy technology acquisitions 2021</h5>
-                    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                </div>
-            </div>
+               <div className='grid grid-cols-1 max-w-7xl mx-auto  gap-7 md:grid-cols-2 lg:grid-cols-3 px-2'>
+               {
+                    popularCourse?.map(course=> <CourseCard 
+                        key={course.id}
+                        course={course}
+                        itemCardbtnClickHandle={itemCardbtnClickHandle}
+
+                        ></CourseCard>)
+               }
+           </div>
         </div>
     );
 };

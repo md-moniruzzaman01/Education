@@ -23,7 +23,7 @@ const LandingSection = () => {
             </div>
             <div className="flex flex-col items-center justify-center my-14  lg:flex-row">
               <div>
-              <button className="px-11 py-4 text-xl my-5 bg-btnColor text-white  font-normal  border-2 border-white rounded-3xl lg:px-9 lg:py-3 lg:text-lg">Get Started</button>
+              <button className="px-11 py-4 text-xl my-5 bg-btnColor text-white  font-normal  border-2 border-white rounded-3xl lg:px-9 lg:py-3 lg:text-md">Get Started</button>
 
               </div>
               <div >
@@ -39,9 +39,9 @@ const LandingSection = () => {
         <img className="  max-h-[650px]  h-auto" src={loadingScreenImg} alt="" />
         </div>
         
-          <p className="absolute top-24 right-7 bg-btnColor py-2 px-3 border-2 border-white rounded-xl text-white  text-3xl lg:right-20 lg:top-44"><FontAwesomeIcon icon={faChartSimple} /></p>
-          <p className="absolute inset-y-1/2   btn-liner  flex items-center border-2 font-semibold text-gray-900 border-white rounded-xl left-0 px-4 py-7 text-xl  lg:left-[-100px] lg:px-7 lg:py-7 lg:text-2xl">75+ Course</p>
-          <div className="absolute bottom-4 right-5 px-3 py-1 btn-liner  text-gray-900 border-2 border-white rounded-xl flex text-md lg:text-2xl lg:right-11"> <p className="px-3 rounded-2xl  bg-btnColor text-white flex items-center mx-3 text-2xl lg:text-4xl"><FontAwesomeIcon icon={faUserGraduate} /></p> <p>10,000+ <span className="block">  Students</span></p> </div>
+          <p className="absolute top-24 right-20 bg-btnColor py-2 px-3 border-2 border-white rounded-xl text-white  text-3xl lg:right-20 lg:top-44"><FontAwesomeIcon icon={faChartSimple} /></p>
+          <p className="absolute inset-y-1/2   btn-liner  flex items-center border-2 font-semibold text-gray-900 border-white rounded-xl left-0 px-4 py-7 text-2xl  lg:left-0 lg:px-7 lg:py-7 lg:text-2xl">75+ Course</p>
+          <div className="absolute bottom-4 right-7 px-3 py-1 btn-liner  text-gray-900 border-2 border-white rounded-xl flex text-md lg:text-2xl lg:right-11"> <p className="px-3 rounded-2xl  bg-btnColor text-white flex items-center mx-3 text-xl lg:text-4xl"><FontAwesomeIcon icon={faUserGraduate} /></p> <p>10,000+ <span className="block">  Students</span></p> </div>
           </div>
         </div>
       </div>

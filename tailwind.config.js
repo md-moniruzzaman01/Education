@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors:{
         headerColor:'#E66EFA',
-        btnColor :'#E486FE'
+        btnColor :'#E486FE',
+        fontGray : '#565656'
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']

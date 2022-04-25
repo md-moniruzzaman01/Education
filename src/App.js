@@ -13,8 +13,7 @@ import RequireAuth from './Components/othersFile/RequireAuth';
 import CourseDetails from './Components/course/CourseDetails';
 import React, { createContext } from 'react';
 import useCourse from './hooks/useCourse';
-
-
+import Footer from './Components/sharedfile/Footer';
 function App() {
 
 
@@ -44,6 +43,7 @@ function App() {
       <Route path='*' element={<NotFound/>}/>
       
     </Routes>
+    <Footer></Footer>
     </div>
   );
 }

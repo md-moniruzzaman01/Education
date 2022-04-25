@@ -5,6 +5,7 @@ import LandingSection from './LandingSection';
 import { useEffect, useState } from 'react';
 import Testimonials from './Testimonials';
 
+
 const Home = () => {
  
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <CetagorySection  ></CetagorySection>
             <CourseSection></CourseSection>
             <Testimonials></Testimonials>
+            
         </div>
     );
 };
